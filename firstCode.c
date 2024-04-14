@@ -5,7 +5,7 @@ int getNum();  // creating a prototype for getNum function //
 int main(void)
 {
 	printf("Please enter 10 integers, pressing ENTER after each one:\n");
-	int value[10] = {0}; // declaring exactly 10 value in array //
+	int value[10]; // declaring exactly 10 value in array //
 	int maximum = 0;
 	int stater  = 0;
 	int counter = 0;
