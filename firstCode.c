@@ -8,8 +8,8 @@ int main(void)
 	int totalnum[10] = {0} ; // declaring exactly 10 value in array //
 	int maximum = 0;
 	int stater  = 0;
-	int counter = 0;
-	while (counter <= 9) // creating a loop for getting input from user and save it in an array //
+	int counter;
+	for (counter = 0 ;counter <= 9 ;counter++) // creating a loop for getting input from user and save it in an array //
 	{
 		int input = getNum(); // getting input from the user //
 		totalnum[counter] = input;
@@ -18,7 +18,6 @@ int main(void)
 			maximum = input;
 			stater = counter;
 		}
-		counter++; // incrementing the counter //
 	}
 	printf("The highest value is %d at index %d", maximum, stater);
 
