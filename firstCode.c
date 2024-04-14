@@ -5,22 +5,22 @@ int getNum();  // creating a prototype for getNum function //
 int main(void)
 {
 	printf("Please enter 10 integers, pressing ENTER after each one:\n");
-	int value[10]; // declaring exactly 10 value in array //
+	int num[10]; // declaring exactly 10 value in array //
 	int maximum = 0;
-	int index = 0;
+	int stater  = 0;
 	int counter = 0;
 	while (counter <= 9) // creating a loop for getting input from user and save it in an array //
 	{
-		int input = getNum();
+		int input = getNum(); // getting input from the user //
 		value[counter] = input;
 		if (maximum < input) // if the input value is grater then maximum then store the value in maximum and store the counter in index //
 		{
 			maximum = input;
-			index = counter;
+			stater = counter;
 		}
 		counter++; // incrementing the counter //
 	}
-	printf("The highest value is %d at index %d", maximum, index);
+	printf("The highest value is %d at index %d", maximum, stater);
 
 	return 0;
 }
